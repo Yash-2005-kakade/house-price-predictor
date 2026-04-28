@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from flask import Flask, request, jsonify, send_file
 import joblib
 import pandas as pd
@@ -64,7 +64,7 @@ def predict():
 # 🔹 Run for deployment
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-=======
+
 from flask import Flask, request, jsonify, send_from_directory
 import joblib
 import pandas as pd
@@ -116,5 +116,5 @@ def predict():
 # 🔹 Run for deployment
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
->>>>>>> 0617429447c6cc351ff163a3bd24f4b72855d6e4
+
     app.run(host="0.0.0.0", port=port)
